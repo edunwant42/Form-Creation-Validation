@@ -2,71 +2,108 @@
 
 ## 📋 Description
 
-This project is part of the **ALX Web Development** program. The task focuses on creating a user registration form and implementing **client-side form validation using JavaScript**.
+This project is part of the **ALX Web Development** program. It covers two core assignments:
 
-It includes:
-- A styled HTML form with username, email, and password fields.
-- Validation logic for each field (e.g. minimum length, email format).
-- Dynamic feedback to the user based on input correctness.
+---
+
+### 🧩 Assignment 0: Form Creation & Validation
+
+Build and validate a user registration form using **HTML**, **CSS**, and **vanilla JavaScript**.
+
+#### Features:
+
+- User form with **username**, **email**, and **password** fields.
+- Live **client-side validation** with dynamic error/success messages.
+- Feedback using JavaScript for:
+  - Minimum input length
+  - Email format check
+  - Password requirements
+
+---
+
+### 🔗 Assignment 3: Fetching User Data from API
+
+Implement a responsive page that asynchronously fetches and displays user data from a **public REST API** using JavaScript.
+
+#### Features:
+
+- Fetches user names from `https://jsonplaceholder.typicode.com/users`.
+- Displays data as a clean list with loading/error states.
+- Graceful error handling using `try...catch`.
+- Fully styled UI using custom CSS.
 
 ---
 
 ## 📁 Project Structure
 
-```
+```plaintext
 Form-Creation-Validation/
-├── index.html # Provided HTML form
-├── style.css # Provided CSS for form styling
-└── script.js # JavaScript validation (implemented)
+├── index.html # Registration form (Assignment 0)
+├── style.css # Form styling
+├── script.js # Form validation logic
+├── fetch-data.html # API Fetch page (Assignment 3)
+├── fetch-data.css # Styling for API UI
+├── fetch-data.js # Async fetch + error handling
+└── preview/ # Screenshots & demo previews
 ```
 
 ---
 
-## 🧠 Validation Rules
+## 🚦 Assignment 0: Validation Rules
 
-- **Username**: Must be at least 3 characters long.
-- **Email**: Must include "@" and "." symbols.
-- **Password**: Must be at least 8 characters long.
-
-All validations are handled on the client side using **vanilla JavaScript**.
-
----
+- **Username**: Minimum 3 characters
+- **Email**: Must include `@` and `.` symbols
+- **Password**: Minimum 8 characters
 
 ## 🚀 How to Use
 
-1. Clone the repository:
+1. Clone the repo:
    ```bash
    git clone git@github.com:edunwant42/Form-Creation-Validation.git
    cd Form-Creation-Validation
    ```
-2. Open index.html in your browser.
-
-3. Try filling the form with various input to see validation messages.
 
 
-### ✅ Sample Output
-If all inputs are valid:
+2. Choose the assignment you want to explore:
+ - For **Assignment 0**: Open `index.html` in your browser.
+ - For **Assignment 3**: Open `fetch-data.html` in your browser.
 
-`
-"Registration successful!"
-`
+### 🧩 Assignment 0: Form Creation & Validation
 
-If there are errors, all relevant messages will be shown:
+1. Open the `index.html` file in your browser:
+ - You can double-click it, or right-click → "Open with" → Your browser.
 
-```
-- Username must be at least 3 characters long.
+2. Try entering:
+ - A **short username**, incorrect **email format**, or weak **password** to see live validation.
+ - Correct inputs to simulate a successful registration.
 
-- Please enter a valid email address.
+3. You can edit `script.js` to tweak the validation logic if needed.
 
-- Password must be at least 8 characters long.
-```
+---
 
-### 🖼️ Preview
+### 🔗 Assignment 3: Fetching User Data from API
+
+1. Open the `fetch-data.html` file in your browser.
+
+2. On load, the page will:
+ - Show `Loading user data...`
+ - Then fetch names from `https://jsonplaceholder.typicode.com/users`
+
+3. If the request is successful:
+ - A styled list of user names will appear on the page.
+
+4. If an error occurs:
+ - A message will show: `Failed to load user data.`
+
+---
+
+## 🖼️ Previews
+
+### 🧪 Form Validation Previews (Assignment 0)
 
 #### 🔸 Combined View: All Errors vs Success
 
 <div align="center">
-
 <table>
   <tr>
     <th>All Errors Displayed</th>
@@ -77,15 +114,11 @@ If there are errors, all relevant messages will be shown:
     <td><img src="preview/success.webp" alt="Successful registration" width="300"></td>
   </tr>
 </table>
-
 </div>
-
----
 
 #### 🔹 Individual Validation Errors
 
 <div align="center">
-
 <table>
   <tr>
     <th>Username Error</th>
@@ -98,11 +131,27 @@ If there are errors, all relevant messages will be shown:
     <td><img src="preview/error-password.webp" alt="Short password" width="200"></td>
   </tr>
 </table>
-
 </div>
 
+---
+
+### 🌐 API Fetch Previews (Assignment 3)
+
+<div align="center">
+<table>
+  <tr>
+    <th>Before JavaScript Loaded</th>
+    <th>After Data Fetched</th>
+  </tr>
+  <tr>
+    <td><img src="preview/user-list-before.webp" alt="Before JS runs" width="300"></td>
+    <td><img src="preview/user-list-after.webp" alt="User data loaded" width="300"></td>
+  </tr>
+</table>
+</div>
+
+---
 
 ## 🔐 Author
 
 This project was completed by edunwant42 as part of the ALX Software Engineering program.
-
